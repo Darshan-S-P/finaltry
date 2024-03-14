@@ -22,7 +22,7 @@ app.use(cors());
 // Define route for fetching available flights
 app.get('/api/flights', (req, res) => {
   // Query the database to get the available flights
-  pool.query('SELECT * FROM Flights', (error, results) => {
+  pool.query('SELECT * FROM flight', (error, results) => {
     if (error) {
       console.error('Error fetching flights:', error);
       res.status(500).json({ error: 'Internal server error' });
