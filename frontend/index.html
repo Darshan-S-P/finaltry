@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Flight Booking</h1>
+  <div id="registrationSection">
+    <h2>Registration</h2>
+    <form id="registrationForm">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input type="text" name="name" placeholder="Full Name">
+      <input type="email" name="email" placeholder="Email">
+      <input type="tel" name="phone" placeholder="Phone">
+      <!-- Add more input fields for other user information -->
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <!-- Flight booking form (initially hidden) -->
+  <div id="bookingSection" style="display: none;">
+    <h2>Book a Flight</h2>
+    <form id="bookingForm">
+      <label for="flight">Select Flight:</label>
+      <select id="flight" name="flight">
+        <!-- Populate options dynamically from your database -->
+      </select>
+
+      <label for="departureDate">Departure Date:</label>
+      <input type="date" id="departureDate" name="departureDate">
+
+      <label for="numTickets">Number of Tickets:</label>
+      <input type="number" id="numTickets" name="numTickets" min="1" value="1">
+
+      <button type="submit">Book Flight</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

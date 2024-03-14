@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Flight Booking</h1>
+  <form id="bookingForm">
+    <label for="flight">Select Flight:</label>
+    <select id="flight" name="flight">
+      <!-- Options will be dynamically populated here -->
+    </select>
+
+    <label for="departureDate">Departure Date:</label>
+    <input type="date" id="departureDate" name="departureDate">
+
+    <label for="numTickets">Number of Tickets:</label>
+    <input type="number" id="numTickets" name="numTickets" min="1" value="1">
+
+    <button type="submit">Book Flight</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
